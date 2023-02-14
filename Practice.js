@@ -1,3 +1,5 @@
+//Create a for loop to determine how many index values are positive.
+
 var countPositives = 0;
 var numbers = [3, 4, -2, 7, 16, -8, 0];
     
