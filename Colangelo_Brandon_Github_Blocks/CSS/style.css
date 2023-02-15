@@ -1,0 +1,36 @@
+* {
+    font-family: sans-serif;
+}
+.container {
+    width: 800px;
+    margin: 0 auto;
+    background-color: lightgray;
+    padding: 20px;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.octocat {
+    height: 200px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+}
+.blue {
+    background-color: skyblue;
+}
+.pink {
+    background-color: palevioletred;
+    justify-content: space-evenly;
+}
+a {
+    color: cyan;
+    text-decoration: underline;
+}
