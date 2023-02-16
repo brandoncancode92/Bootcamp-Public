@@ -1,0 +1,36 @@
+.nav {
+    background-color: #333333;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.nav-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    margin-left: 20px;
+}
+.nav-links {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+}
+.nav a {
+    text-decoration: none;
+    color: slategray;
+}
+.nav .active {
+    color: whitesmoke;
+}
+.btn {
+    background-color: #14a2b8;
+    border: none;
+    box-shadow: 4px 4px black;
+    color: whitesmoke;
+    font-size: 20px;
+    height: 40px;
+    width: 100px;
+}
