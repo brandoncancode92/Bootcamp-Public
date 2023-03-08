@@ -1,0 +1,287 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+}
+
+.container1 {
+    height: auto;
+    width: 1000px;
+}
+
+/* Start of NavBar */
+.navBar {
+    align-items: center;
+    background-color: palevioletred;
+    color: aquamarine;
+    text-shadow: 2px 2px black;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 1000px;
+}
+
+/* Start of NavBar Content */
+.navTitle {
+    font-family: 'Roboto';
+    margin-left: 20px;
+}
+
+.navList {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-right: 20px;
+    width: 50%;
+}
+
+.links {
+    color: aquamarine;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: lightslategray;
+    border: none;
+    box-shadow: 4px 4px black;
+    color: aquamarine;
+    font-size: 20px;
+    height: 40px;
+    width: 100px;
+}
+/* End of NavBar Content */
+/* End of Navbar */
+
+/* Start of Row1 */
+.row1 {
+    display: flex;
+}
+
+.column1 {
+    flex: 2;
+    margin-right: 10px;
+}
+
+/* Start of User card */
+/* Linear Gradient idea found on youtube :) */
+.userCard {
+    background-image: linear-gradient(to bottom, lightpink 0%,
+    lightpink 30%, aquamarine 30%, aquamarine 100%);
+    border: solid 2px black;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Profile picture and name */
+.cardHeader {
+    display: flex-block;
+    margin-top: 20px;
+}
+
+.profilePicture {
+    border: solid 5px aquamarine;
+    border-radius: 50%;
+    margin-left: 20px;
+    width: 8em;
+}
+
+.cardName {
+    color: black;
+    font-family: cursive;
+    margin-left: 20px;
+}
+
+/* Location image and location */
+.cardLocation {
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.icons {
+    margin-right: 10px;
+    width: 1em;
+}
+
+.locationText {
+    font-family: 'Roboto';
+}
+
+/* User card skills */
+.cardSkills {
+    margin-left: 20px;
+}
+
+.paratext {
+    font-family: 'Roboto';
+}
+
+.paratext2 {
+    font-family: 'Roboto';
+    margin-bottom: 20px;
+}
+
+/* Edit profile image and link */
+.cardEdit {
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.link {
+    font-size: larger;
+}
+/* End of User card */
+
+/* Start of Education Card */
+/* Linear Gradient idea found on youtube :) */
+.educationCard {
+    background-image: linear-gradient(to bottom, lightpink 0%,
+    lightpink 30%, aquamarine 30%, aquamarine 100%);
+    border: solid 2px black;
+    display: flex-block;
+    height: auto;
+}
+
+/* Education Header */
+.educationHeader {
+    font-family: 'Roboto';
+    font-size: 2em;
+    margin-top: 7px;
+    margin-left:20px;
+}
+
+/* Education Information */
+.educationInformation {
+    font-family: 'Roboto';
+    margin: 20px;
+}
+
+.school {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.dates {
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.applicableSkills {
+    font-weight: 700;
+}
+/* End of Education Card */
+/* End of Column1 */
+
+/* Start of Column2 */
+.column2 {
+    flex: 1;
+    margin-left: 10px;
+}
+
+/* Start of Connection Requests */
+/* Some traits shared with Your Connections */
+.connectionRequestsCard,
+.yourConnectionsCard {
+    background-color: aquamarine;
+    border: solid 2px black;
+    display: flex-block;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.requestsHeader,
+.yourConnectionsHeader { 
+    align-items: center;
+    background-color: lightpink;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.requestsNumber {
+    align-items: center;
+    background-color: whitesmoke;
+    border: solid 2px aquamarine;
+    border-radius: 50%;
+    display: flex;
+    font-size: 2em;
+    justify-content: center;
+    margin: 5px 5px;
+    width: 2em;
+}
+
+.requestsText,
+.connectionsText {
+    margin-left: 10px;
+}
+
+.connectionContent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.spanStart {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.profileAvatar,
+.acceptOrdecline  {
+    border: solid 2px lightpink;
+    border-radius: 50%;
+    width: 50px;
+}
+
+.profileName {
+    margin-left: 10px;
+}
+
+.spanEnd {
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 5px;
+    padding: 5px;
+}
+/* End of Connection Requests */
+
+/* Start of Your Connections */
+/* Some traits shared with Connection Reuests */
+.connectionNumber {
+    align-items: center;
+    background-color: whitesmoke;
+    border: solid 2px aquamarine;
+    border-radius: 50%;
+    display: flex;
+    font-size: 2em;
+    justify-content: center;
+    margin: 5px 5px;
+    width: 2em;
+}
+
+.arryconnectionContent {
+    border-bottom: solid 2px black;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.viewMore {
+    display: flex;
+    margin: 20px;
+} 
+/* End of Your Connctions */
+/* End of Column2 */
+/* End of Row1 */
