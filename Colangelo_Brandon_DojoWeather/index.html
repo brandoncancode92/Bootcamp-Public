@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <div class="navbar">
+            <h1 class="title">DojoWeather</h1>
+            <ul class="navlinks">
+                <li onclick="cityInfo()"><a class="links" href="#">Bar Harbor</a></li>
+                <li onclick="cityInfo()"><a class="links" href="#">Charlotte</a></li>
+                <li onclick="cityInfo()"><a class="links" href="#">Tampa</a></li>
+            </ul>
+        </div>
+        <!-- End of Navbar -->
+        <!-- City Header -->
+        <div class="header">
+            <h1 class="currentCity">Pittsburgh</h1>
+            <label class="selectorLabel">Show temperature in</label>
+            <select id="degrees" onchange="TempConversion(this)">
+                <option>°C</option>
+                <option>°F</option>
+            </select>
+        </div>
+        <!-- End of City Header -->
+        <div class="row1">
+            <!-- Forecast Boxes -->
+            <div class="column1">
+                <h1 class="weekday">Today</h1>
+                <img class="weatherPic" src="imgs/some_rain.png" alt="Rainy">
+                <p class="paratext">Some rain</p>
+                <ul class="listProp">
+                    <li class="startingTemp" id="temp1">24</li>
+                    <li class="endingTemp" id="temp2">18</li>
+                </ul>
+            </div>
+            <div class="column2">
+                <h1 class="weekday">Tomrrow</h1>
+                <img class="weatherPic" src="imgs/some_sun.png" alt="Sunny">
+                <p class="paratext">Some sun</p>
+                <ul class="listProp">
+                    <li class="startingTemp" id="temp3">27</li>
+                    <li class="endingTemp" id="temp4">19</li>
+                </ul>
+            </div>
+            <div class="column3">
+                <h1 class="weekday">Friday</h1>
+                <img class="weatherPic" src="imgs/some_clouds.png" alt="Cloudy">
+                <p class="paratext">Some clouds</p>
+                <ul class="listProp">
+                    <li class="startingTemp" id="temp5">21</li>
+                    <li class="endingTemp" id="temp6">16</li>
+                </ul>
+            </div>
+            <div class="column4">
+                <h1 class="weekday">Saturday</h1>
+                <img class="weatherPic" src="imgs/some_sun.png" alt="Sunny">
+                <p class="paratext">Some sun</p>
+                <ul class="listProp">
+                    <li class="startingTemp" id="temp7">26</li>
+                    <li class="endingTemp" id="temp8">21</li>
+                </ul>
+            </div>
+            <!-- End of Forecast Boxes -->
+        </div>
+        <!-- Cookie Ad -->
+        <div class="cookiePopUp">
+            <img class="cookieImage" src="imgs/cookie.png" alt="Cookie Icon">
+            <div class="cookieParagraphs">
+                <p class="cookieParagraph1">Stop! Cookie time</p>
+                <p class="Paragraph2">We use cookies (sadly not the edible ones) to personalize content and ads,
+                 to provide social media features and to analyze our traffic. <a href="#">Read more...</a></p>
+            </div>
+            <button class="cookieButton" onclick="acceptCookie()">I Accept</button>
+        </div>
+        <!-- End of Cookie Ad -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
